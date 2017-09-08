@@ -4,6 +4,8 @@
 
 - Easy to use Loading View in iOS
 
+![alt tag](Images/GradientLoading.gif)
+
 ## Requirements
 - iOS 8.0+
 - Swift 3.0
