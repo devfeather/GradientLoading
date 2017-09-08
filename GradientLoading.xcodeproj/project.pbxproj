@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		AFE0BC5B1F5FADB70007D373 /* GradientLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE0BC591F5FADB70007D373 /* GradientLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFE0BC8C1F5FAE250007D373 /* GradientLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0BC8B1F5FAE250007D373 /* GradientLoading.swift */; };
+		AFE0BC8F1F5FB4550007D373 /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0BC8E1F5FB4550007D373 /* GradientLabel.swift */; };
+		AFE0BC911F5FB6CA0007D373 /* GradientColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0BC901F5FB6CA0007D373 /* GradientColors.swift */; };
+		AFE0BC941F5FCBD40007D373 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0BC931F5FCBD40007D373 /* Extensions.swift */; };
+		AFE0BC961F5FD5A70007D373 /* GradientPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0BC951F5FD5A70007D373 /* GradientPoint.swift */; };
+		AFE0BC981F6023420007D373 /* GradientCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE0BC971F6023420007D373 /* GradientCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +21,11 @@
 		AFE0BC591F5FADB70007D373 /* GradientLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientLoading.h; sourceTree = "<group>"; };
 		AFE0BC5A1F5FADB70007D373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE0BC8B1F5FAE250007D373 /* GradientLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientLoading.swift; path = Classes/GradientLoading.swift; sourceTree = "<group>"; };
+		AFE0BC8E1F5FB4550007D373 /* GradientLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientLabel.swift; path = Classes/GradientLabel.swift; sourceTree = "<group>"; };
+		AFE0BC901F5FB6CA0007D373 /* GradientColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientColors.swift; path = Classes/GradientColors.swift; sourceTree = "<group>"; };
+		AFE0BC931F5FCBD40007D373 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AFE0BC951F5FD5A70007D373 /* GradientPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientPoint.swift; path = Classes/GradientPoint.swift; sourceTree = "<group>"; };
+		AFE0BC971F6023420007D373 /* GradientCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientCollection.swift; path = Classes/GradientCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				AFE0BC8B1F5FAE250007D373 /* GradientLoading.swift */,
+				AFE0BC8E1F5FB4550007D373 /* GradientLabel.swift */,
+				AFE0BC951F5FD5A70007D373 /* GradientPoint.swift */,
+				AFE0BC901F5FB6CA0007D373 /* GradientColors.swift */,
+				AFE0BC971F6023420007D373 /* GradientCollection.swift */,
+				AFE0BC931F5FCBD40007D373 /* Extensions.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -143,7 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE0BC911F5FB6CA0007D373 /* GradientColors.swift in Sources */,
+				AFE0BC981F6023420007D373 /* GradientCollection.swift in Sources */,
+				AFE0BC8F1F5FB4550007D373 /* GradientLabel.swift in Sources */,
 				AFE0BC8C1F5FAE250007D373 /* GradientLoading.swift in Sources */,
+				AFE0BC961F5FD5A70007D373 /* GradientPoint.swift in Sources */,
+				AFE0BC941F5FCBD40007D373 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -240,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
