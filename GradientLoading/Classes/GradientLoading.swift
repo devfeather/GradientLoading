@@ -51,9 +51,22 @@ public class GradientLoading {
     // MARK: - Setup
     fileprivate func setup() {
         containerView.addSubview(gradientLabel)
-    
-        gradientLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
-        gradientLabel.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        
+        containerView.addConstraints([ NSLayoutConstraint(item: gradientLabel,
+                                                          attribute: .centerX,
+                                                          relatedBy: .equal,
+                                                          toItem: containerView,
+                                                          attribute: .centerX,
+                                                          multiplier: 1.0,
+                                                          constant: 0.0),
+                                       
+                                       NSLayoutConstraint(item: gradientLabel,
+                                                          attribute: .centerY,
+                                                          relatedBy: .equal,
+                                                          toItem: containerView,
+                                                          attribute: .centerY,
+                                                          multiplier: 1.0,
+                                                          constant: 0.0) ])
     }
     
     public func setFontAttributes(text: String = "Loading...", font: UIFont = .HelveticaNeueBold(size: 20), strokecolor: UIColor = .black, strokeWidth: Float = -3.0) {
@@ -88,10 +101,37 @@ public class GradientLoading {
             keyWindow.addSubview(self.containerView)
             keyWindow.bringSubview(toFront: self.containerView)
             
-            self.containerView.topAnchor.constraint(equalTo: keyWindow.topAnchor).isActive = true
-            self.containerView.bottomAnchor.constraint(equalTo: keyWindow.bottomAnchor).isActive = true
-            self.containerView.leadingAnchor.constraint(equalTo: keyWindow.leadingAnchor).isActive = true
-            self.containerView.trailingAnchor.constraint(equalTo: keyWindow.trailingAnchor).isActive = true
+            keyWindow.addConstraints([ NSLayoutConstraint(item: self.containerView,
+                                                          attribute: .top,
+                                                          relatedBy: .equal,
+                                                          toItem: keyWindow,
+                                                          attribute: .top,
+                                                          multiplier: 1.0,
+                                                          constant: 0.0),
+                                       
+                                       NSLayoutConstraint(item: self.containerView,
+                                                          attribute: .bottom,
+                                                          relatedBy: .equal,
+                                                          toItem: keyWindow,
+                                                          attribute: .bottom,
+                                                          multiplier: 1.0,
+                                                          constant: 0.0),
+                                       
+                                       NSLayoutConstraint(item: self.containerView,
+                                                          attribute: .leading,
+                                                          relatedBy: .equal,
+                                                          toItem: keyWindow,
+                                                          attribute: .leading,
+                                                          multiplier: 1.0,
+                                                          constant: 0.0),
+                                       
+                                       NSLayoutConstraint(item: self.containerView,
+                                                          attribute: .trailing,
+                                                          relatedBy: .equal,
+                                                          toItem: keyWindow,
+                                                          attribute: .trailing,
+                                                          multiplier: 1.0,
+                                                          constant: 0.0) ])
         }
         
         addtoKeyWindow = true
