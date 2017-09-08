@@ -21,6 +21,18 @@ it, simply add the following line to your Podfile:
 pod 'GradientLoading'
 ```
 
+## Usage
+```swift
+// Setup Text, Font, Stroke Color, Stroke Width.
+GradientLoading.shared.setFontAttributes(text: "Jennie")
+
+// use setCollectionColors or setColors.
+GradientLoading.shared.setCollectionColors(.aurora)
+// GradientLoading.shared.setColors([])
+
+GradientLoading.shared.show()
+```
+
 ## Author
 
 feather, dev.thefeather@gmail.com
