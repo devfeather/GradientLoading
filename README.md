@@ -1,7 +1,7 @@
 # GradientLoading
 
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
-[![CocoaPods](http://img.shields.io/cocoapods/v/GradientLoading.svg?style=flat)](http://cocoapods.org/?q=name%3AGradientLoading%20author%3feather)
+[![CocoaPods](http://img.shields.io/cocoapods/v/GradientLoading.svg?style=flat)](http://cocoapods.org/?q=name%3AGradientLoading%20author%3Afeather)
 
 - Easy to use Loading View in iOS
 
